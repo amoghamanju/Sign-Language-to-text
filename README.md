@@ -23,3 +23,29 @@ This repository contains code and experiments for a comparative study of two app
 |-------|-------|-------|-------|--------|
 | I3D   | 37.0% | 63.0% | 68.0% | 74.0%  |
 | TGCN  | 58.1% | 75.6% | 81.4% | 87.9%  |
+
+## 🔧 Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/sign-language-recognition-I3D-TGCN.git
+   cd sign-language-recognition-I3D-TGCN
+2. Install requirements:
+pip install -r requirements.txt
+
+3.Download the WLASL dataset and place it in the data/ directory.
+
+4. For Pose-TGCN:
+-  Run extract_pose.py to generate features using MediaPipe.
+- Train or test with train_tgcn.py or test_tgcn.py.
+
+5. For I3D:
+ - Use train_i3d.py or test_i3d.py on RGB video data.
+
+🧾 Citation
+@inproceedings{li2020word,
+  title={Word-Level Deep Sign Language Recognition from Video: A New Large-Scale Dataset and Methods Comparison},
+  author={Li, Dongxu and Rodriguez, Cristian and Yu, Xin and Li, Hongdong},
+  booktitle={WACV},
+  year={2020}
+}
